@@ -1,0 +1,114 @@
+@charset "utf-8";
+ /* 공통 */
+ *{ 
+    font-family: 'Noto Sans KR', sans-serif;
+    /* font-family: 'Noto Serif KR', serif; */
+  }
+ 
+ * button {background:#00539C; color: #FFD662; border-radius: 5px;}
+ body{margin: 0;}
+ a {text-decoration:none; color: black;}
+.wrapper {width:978px; margin: 0 auto;}
+.header {padding:30px; color: #00539C; background: #FFD662; min-height: 50px;}
+.header > * {margin: 0;}
+.header h1 {float: left; width: 330px; }
+.header h1 a{color: #00539C;}
+.header ul {float: right; }
+.header li {display: inline-block;}
+.header li button {margin-left: 10px;}
+.header label {font-size: 17px;}
+.header label input {padding: 5px; width: 60px; border-radius: 5px; border: 0; margin: 0 6px;}
+.header label .ckbox {width: 20px; margin: 0; padding: 0;}
+/* 메뉴 */
+.gnb {background: #00539C;}
+.gnb ul { margin-top:0;}
+.gnb li {display: inline-block; padding: 5px; margin: 5px 20px; color:#FFD662;} 
+.gnb li a {color:#FFD662; }
+/* 본문, 표 */
+
+.content {clear: both; padding:30px 0;  padding-left:94px;}
+.content table {width: 30%; display: inline-table; margin: 20px 50px; table-layout: fixed;}
+.content table:nth-child(odd){margin-right: 100px;}
+.content table td:first-child {width: 85%;}
+
+/* 게시글 리스트  */
+
+.tab-list {width: 978px; border-bottom: 3px solid #00539C; border-top: 3px solid #00539C; margin-bottom: 5px;}
+.tab-list table {width: 100%;}
+/* 회원가입 부  */
+.join-wrapper .check-group {
+	width:500px; 
+	height: 440px;
+	margin:15px; padding:10px; 
+	margin-left: 40px;
+	border:1px solid #939597;
+	border-radius: 15px; 
+	box-shadow: 0px 0px 5px 0px #939597;
+	float: left;
+	}
+.join-wrapper .check-group label {font-size: 22px; color: #273c75;}
+.join-wrapper .check-group .check-wrap div {margin: 5px 0; }
+.join-wrapper .join-form {
+	width:300px; 
+	height: 440px;
+	display:inline-block;
+	margin:15px; padding:10px; 
+	border: 1px solid #939597;
+	border-radius: 15px; 
+	box-shadow: 0px 0px 5px 0px #939597;
+	float: right;
+	}
+.join-wrapper .join-form fieldset {border: 0; padding: 0; margin: 0;}
+.join-wrapper .join-form fieldset legend {display: none;}
+.signin-form label {width: 200px; display:block; margin-bottom: 8px; position: relative;}
+.signin-form label span{display:inline-block;}
+.signin-form input {width: 280px; margin-bottom:3px; border-radius: 8px; padding: 5px 5px;}
+.btn-box button {margin: 4px; width:137px;}
+.signin-form .error{display: block; color: #f00; position: absolute; top: 54px; left: 7px; font-size: 11px; width: 100%; display: none;}
+.signin-form .error-box{box-shadow:  0 0 2px red;}
+
+/*인포 부 */
+.info-wrapper {margin: 15px;}
+.info-wrapper h1 {color: #00539C;}
+.info-wrapper h2 {color: #00059c;}
+.info-wrapper .info-content .logo {width: 225px; height: 225px; margin: 0 42px;}
+
+/* 게시글 상게보기 폼  */
+.tab-wrapper table {width:100%; border-collapse: collapse;}
+.tab-wrapper th,td {}
+.tab-wrapper table .td-content {padding-left: 45px; border-top: 3px solid #00539C;}
+.tab-wrapper table .td-file {width: }
+.write-table {width:100%;}
+.ck-editor__editable {min-height:300px;}
+.file-wrap {border-bottom: 3px solid #00539C; border-top: 3px solid #00539C; }
+.file-wrap a {margin-right: 13px;}
+.file-wrap div {margin-bottom: 15px;}
+/*  댓글 */
+.reply-wrap {font-size: 13px;}
+.reply-header > div {float: left; width: 45px; border-bottom: 3px solid #00539C; height: 23px; padding: 5px;}
+.reply-header > div+div {float: right;  width: 913px; border-bottom: 3px solid #ccc; text-align: right; height: 23px; padding: 5px;}
+.reply-header button {margin: 0; font-size: 13px;}
+
+.reply-content {clear: both; position: relative; padding: 15px; border-bottom: 3px solid #ccc;}
+/* .reply-content > .reply-content-header > span {margin: 15px;} */
+.reply-content > .reply-body { width: 830px; height: 50px;}
+.reply-content .reply-btns {position: absolute; top: 15px; right: 20px;}
+.reply-form {text-align: right; border-bottom: 3px solid #00539C;}
+.reply-form button {margin-bottom: 5px;}
+.reply-form textarea {width: 100%; margin: 20px 0;}
+
+.btns{margin: 5px 0;}
+
+.reply-modify{display: none;}
+/* .madalwrap {position: relative;} */
+/* 모달 관련  */
+.modal {
+	max-width:700px !important; height:100%;  
+	}
+.modal div {margin-bottom: 15px;}	
+.modal .modal-img {background:#FFD662; }
+.modal .modal-img img {margin: 20px 67px;}
+.madalwrap .modal .modal_content {
+  }
+footer {text-align: center; background: #FFD662; color: #00539C; padding: 15px; clear: both;}
+footer .madallink {text-decoration: underline; font-style: italic; color: #00539C;}
